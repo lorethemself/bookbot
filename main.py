@@ -61,5 +61,7 @@ def make_book_report(path_to_book):
 def main():
     if len(sys.argv) > 1:
         path_to_book = sys.argv[1]
+    else:
+        print('Usage: python3 main.py <path_to_book>')
     make_book_report(path_to_book)
 main()
